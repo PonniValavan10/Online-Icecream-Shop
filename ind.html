@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*,*:before,*after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Nunito',sans-serif;
+}
+body{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:-webkit-linear-gradient(left,#ff757c,#fc7a52);
+    font-family:'Nunito',sans-serif;
+    
+    
+    
+}
+
+input,button{
+    border:none;
+    outline:none;
+    background:none;
+}
+.cont{
+    overflow:hidden;
+    position:relative;
+    width:900px;
+    height:550px;
+    background:#fff;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    background-image: url("bg1.jpg");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 300px 580px;
+}
+.form{
+    position:relative;
+    width:640px;
+    height:100%;
+    padding:50px 30px;
+    -webkit-transition:-webkit-transform 1.2s ease-in-out;
+    transition:-webkit-transform 1.2s ease-in-out;
+    transition:transform 1.2s ease-in-out;
+    transition:transform 1.2s ease-in-out,-webkit-transform 1.2s ease-in-out;
+    
+}
+.form h2{
+    width:100%;
+    font-size:30px;
+    text-align:center;
+}
+label{
+    display:block;
+    width:260px;
+    margin:25px auto;
+    text-align:center;
+}
+label span{
+    font-size:14px;
+    font-weight: 600;
+    color: #505f75;
+    text-transform:uppercase;
+}
+input{
+    display:block;
+    width:100%;
+    margin-top:5px;
+    font-size:16px;
+    padding-bottom:5px;
+    border-bottom:1px solid rgba(109,93,93,0.4);
+    text-align:center;
+    font-family:'Nunito',sans-serif;
+}
+button{
+    display:block;
+    margin:0 auto;
+    width:260px;
+    height:36px;
+    border-radius:30px;
+    color:#fff;
+    font-size: 15px;
+    cursor:pointer;
+}
+.submit{
+    margin-top:40px;
+    margin-bottom:30px;
+    text-transform: uppercase;
+    font-weight:600;
+    font-family:600;
+    font-family:'Nunito',sans-serif;
+    background:-webkit-linear-gradient(left,#ff757c,#fc7a52);
+}
+.submit:hover{
+    background:-webkit-linear-gradient(left,#ff757c,#fc7a52);
+}
+.carousel-indicators{
+    height:100vh;
+    min-height:300px;
+    background:no repeat scroll center scroll;
+    -webkit-background-size:cover;
+    background-size: cover;
+
+}
+</style>
+</head>
+<body>
+<form action="loginaction.jsp" method="get" >
+    
+    <div class="cont">
+        <div class="form">
+            
+
+            <h2 style="color:black;">Sign In</h2><br><br>
+            <label>
+                <span>Email Address</span>
+                <input type="email" name="email">
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" name="password">
+            </label>
+            <a href="home.html">
+            <button class="submit"type="button">SIGN IN
+            </button>
+        </a>
+           
+           <p style="text-align:center;color:black">Create an Account <a href="sign.html">Login here</a>
+            </p>
+        </div>
+    </div>
+</form>
+</body>
+</html>

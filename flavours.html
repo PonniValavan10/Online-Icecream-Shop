@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+    min-height:70vh;
+    justify-content:center;
+    align-items:center;
+    background:-webkit-linear-gradient(left,#ff757c,#fc7a52);
+    line-height:1.5;
+
+}
+p{
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:black;
+}
+.container{
+    width:1000px;
+    max-width:100%;
+    margin:0 auto;
+}
+.row{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.card{
+    flex:1 1 20rem;
+    display:flex;
+    flex-wrap: wrap;
+    margin:20px 20px;
+    background: #fff;
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+    padding:20px 15px;
+    align-self:normal;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+.card h4{
+    font-size:1.7rem;
+    text-transform:uppercase;
+    margin:10px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.card p{
+    margin-bottom:10px;
+}
+ .card .button{
+    display:inline-block;
+    background: black;
+    color:#fff;
+    text-align:center;
+    color:#fff;
+    padding:20px 30px;
+    border-radius:4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.card img{
+    width:100%;
+    height:50%;
+    padding:8px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Nunito',sans-serif;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #f4511e;
+    color: white;
+  }
+h4{
+color:black;
+}
+  
+  </style>
+</head>
+<body>
+<form action="loginAction.jsp" method="post" style="color:white;">
+    <div class="topnav">
+    <a class="active" href="home.html">Home</a>
+    <a href="flavours.html">Flavours</a>
+    <a href="ind.html">Login</a>
+    <a href="about.html">About</a>
+    <img class="ice1.jpg" src="logo.jpg" width="85" height="80" align=right><p style="color:#f2f2f2;font-size: 25px;font-style: italic;font-family: Copperplate Gothic Light;
+text-align: right;">Scoops n' Smiles</p>
+  </div>
+   
+      <div class="container">
+        <div class="row">
+            <div class="card">
+              <img src="vanilla.jpg" alt="vanilla">
+              <h4>Vanilla</h4>
+              <p>
+                 <b>Rs.74</b>
+              </p><br> 
+              <button class="button">Buy Now</button> 
+              </div>
+              <div class="card">
+                  <img src="choco.jpg" alt="chocolate">
+                  <h4>Chocolate</h4>
+                  <p>
+                    <b>Rs.89</b>
+                  </p><br>
+                  <button class="button">Buy Now</button> 
+              </div>
+              <div class="card">
+                <img src="mango.jpg" alt="chocolate">
+                <h4>Mango</h4>
+                <p>
+                    <b>Rs.89</b>
+                </p><br>
+                <button class="button">Buy Now</button> 
+            </div>
+        </div>
+        <div class="break"></div>
+    
+        <div class="row">
+            <div class="card">
+              <img src="pista.jpg" alt="pista">
+              <h4>Pista</h4>
+              <p>
+                <b>Rs.89</b>
+              </p> <br>
+              <button class="button">Buy Now</button> 
+              </div>
+              <div class="card">
+                  <img src="oreo.jpg" alt="oreo">
+                  <h4>Oreo</h4>
+                  <p>
+                    <b>Rs.89</b>
+                  </p><br>
+                  <button class="button">Buy Now</button> 
+              </div>
+              <div class="card">
+                <img src="strawberry.jpg" alt="strawberry">
+                <h4>Strawberry</h4>
+                <p>
+                    <b>Rs.74</b>
+                </p><br>
+                <button class="button">Buy Now</button> 
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="row">
+            <div class="card">
+              <img src="butterscotch.jpg" alt="butterscotch">
+              <h4>Butterscotch</h4>
+              <p>
+                <b>Rs.74</b>
+              </p> <br>
+              <button class="button">Buy Now</button> 
+              </div>
+              <div class="card">
+                  <img src="blackcurrant.jpg" alt="blackcurrant">
+                  <h4>Blackcurrant</h4>
+                  <p>
+                    <b>Rs.99</b>
+                  </p><br>
+                  <button class="button">Buy Now</button> 
+              </div>
+              <div class="card">
+                <img src="cotton.jpg" alt="cottoncandy">
+                <h4>Cottoncandy</h4>
+                <p>
+                    <b>Rs.99</b>
+                </p><br>
+                <button class="button">Buy Now</button> 
+            </div>
+        </div>
+   </div>
+</form>
+ </body>
+</html>
